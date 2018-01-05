@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.readFile('ionic-users-sample.json', 'utf8', function(err, data){
+fs.readFile('ionic-sample.json', 'utf8', function(err, data){
   if(err){
     return console.log(err);
   }

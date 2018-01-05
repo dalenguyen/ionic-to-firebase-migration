@@ -1,0 +1,24 @@
+[
+  {
+      "app_id": "1",
+      "created": "2017-12-28T17:21:31Z",
+      "custom": {
+          "firstName": "Dale",
+          "lastName": "Nguyen",
+          "phone": "1234567890",
+          "points": 0
+      },
+      "details": {
+          "email": "dungnq@itbox4vn.com",
+          "image": "https://www.petmd.com/sites/default/files/petmd-cat-fears-5.jpg",
+          "name": "Dale Nguyen",
+          "password_hash": "123",
+          "password_salt": "123",
+          "username": null
+      },
+      "groups": [],
+      "social": {},
+      "type": "ionic",
+      "uuid": "1"
+  }
+]

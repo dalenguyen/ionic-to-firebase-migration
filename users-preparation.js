@@ -2,7 +2,7 @@ var fs = require('fs');
 
 var users = {"users": []};
 
-fs.readFile('ionic-users-sample.json', 'utf8', function(err, data){
+fs.readFile('ionic-sample.json', 'utf8', function(err, data){
   if(err){
     return console.log(err);
   }
@@ -13,6 +13,7 @@ fs.readFile('ionic-users-sample.json', 'utf8', function(err, data){
     for(var attr in dataArray[index]){
       if(dataArray[index].hasOwnProperty(attr)){
         var user = {};
+        // You need to change the detail from dataArray basing on your JSON file
         user.localId = dataArray[index]['uuid'];
         user.email = dataArray[index]['details']['email'];
         user.emailVerified = null;
