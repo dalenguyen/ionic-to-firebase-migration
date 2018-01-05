@@ -12,3 +12,9 @@ Output file is emails-list.txt
 ```
 node get-emails-only.js
 ```
+
+# Prepare user data for importing to Firebase
+
+```
+node users-preparation.js
+```
