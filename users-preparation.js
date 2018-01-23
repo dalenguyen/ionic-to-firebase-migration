@@ -24,7 +24,7 @@ fs.readFile('ionic-sample.json', 'utf8', function(err, data){
           user.phoneNumber = null;
         } else {
           user.phoneNumber = "+1" + dataArray[index]['custom']['phone'];
-          if(dataArray[index]['custom']['phone'] !== 10){
+          if(dataArray[index]['custom']['phone'].length !== 10){
             user.phoneNumber = null;
           }
         }
