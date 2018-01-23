@@ -20,7 +20,14 @@ fs.readFile('ionic-sample.json', 'utf8', function(err, data){
         user.passwordHash = dataArray[index]['details']['password_hash'];
         user.salt = dataArray[index]['details']['password_salt'];
         user.displayName = dataArray[index]['details']['name'];
-        user.phoneNumber = "+1" + dataArray[index]['custom']['phone'];
+        if(dataArray[index]['custom']['phone'] === undefined){
+          user.phoneNumber = null;
+        } else {
+          user.phoneNumber = "+1" + dataArray[index]['custom']['phone'];
+          if(dataArray[index]['custom']['phone'] !== 10){
+            user.phoneNumber = null;
+          }
+        }
         user.photoUrl = dataArray[index]['details']['image'];
         user.createdAt = Date.parse(dataArray[index]['created']);
         user.providerUserInfo = [];
